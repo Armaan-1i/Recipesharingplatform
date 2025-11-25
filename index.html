@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RecipeWorld — Home</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">RecipeWorld</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="share.html">Share</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Cook • Share • Enjoy</h1>
+      <p>Discover home-cooked recipes from around the world — or share your own.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="recipes.html">Explore Recipes</a>
+        <a class="btn" href="share.html">Share a Recipe</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <article>
+        <h3>Built for home cooks</h3>
+        <p>Simple, beautiful and focused on recipes — no clutter.</p>
+      </article>
+      <article>
+        <h3>Save in your browser</h3>
+        <p>Your shared recipes are saved locally using your browser (no backend).</p>
+      </article>
+      <article>
+        <h3>Dark mode</h3>
+        <p>Toggle light/dark theme — we remember your choice.</p>
+      </article>
+    </section>
+
+    <section class="preview-recipes">
+      <h2>Popular picks</h2>
+      <div class="recipe-grid" id="previewList"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 RecipeWorld • Frontend Demo</p>
+      <nav>
+        <a href="index.html">Home</a> •
+        <a href="recipes.html">Recipes</a> •
+        <a href="share.html">Share</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

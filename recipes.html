@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recipes — RecipeWorld</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">RecipeWorld</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="share.html">Share</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="search-bar">
+      <input id="searchInput" placeholder="Search recipes..." />
+      <select id="filterType">
+        <option value="all">All</option>
+        <option value="veg">Veg</option>
+        <option value="dessert">Dessert</option>
+      </select>
+      <button id="clearBtn" class="btn">Clear</button>
+    </header>
+
+    <section>
+      <h2 class="section-title">All Recipes</h2>
+      <div id="recipeList" class="recipe-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 RecipeWorld</p>
+    </div>
+  </footer>
+</body>
+</html>

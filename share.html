@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Share Recipe — RecipeWorld</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">RecipeWorld</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="share.html">Share</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2 class="section-title">Share Your Recipe</h2>
+
+    <form id="shareForm" class="share-form">
+      <div class="form-row">
+        <input id="title" type="text" placeholder="Recipe title" required>
+        <select id="type">
+          <option value="veg">Veg</option>
+          <option value="nonveg">Non-Veg</option>
+          <option value="dessert">Dessert</option>
+        </select>
+      </div>
+
+      <input id="image" type="url" placeholder="Image URL (optional)">
+      <textarea id="ingredients" placeholder="Ingredients (one per line)" required></textarea>
+      <textarea id="steps" placeholder="Steps (one per line)" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Save Recipe</button>
+        <button type="button" id="saveExample" class="btn">Save Example</button>
+        <button type="button" id="exportBtn" class="btn">Export</button>
+        <button type="button" id="importBtn" class="btn">Import</button>
+        <input type="file" id="importFile" accept="application/json" style="display:none">
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 RecipeWorld</p>
+    </div>
+  </footer>
+</body>
+</html>
